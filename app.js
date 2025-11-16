@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 const corsOptions = {
-  origin: 'https://expense-tracker-b29b5.web.app',
+  origin: ['https://expense-tracker-b29b5.web.app',"http://localhost:3000"],
   methods: ['GET','POST','PUT','DELETE','PATCH','OPTIONS'],
   allowedHeaders: ['Content-Type','Authorization'],
   credentials: true
